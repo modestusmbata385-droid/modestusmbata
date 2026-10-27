@@ -1,0 +1,6 @@
+{
+  "name": "PlayStation Gaming Management System",
+  "description": "Web-based gaming billing, voucher, and session management system for PS4 gaming lounges with Mobile Money, PIN vouchers, and hardware access control integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

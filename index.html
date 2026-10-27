@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayStation Gaming Management System</title>
+    <meta name="description" content="Web-based gaming billing, voucher, and session management system for PS4 gaming lounges with Mobile Money, PIN vouchers, and hardware access control integration." />
+    <meta property="og:title" content="PlayStation Gaming Management System" />
+    <meta property="og:description" content="Web-based gaming billing, voucher, and session management system for PS4 gaming lounges with Mobile Money, PIN vouchers, and hardware access control integration." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      html, body {
+        background-color: #020617;
+        color: #f8fafc;
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      .app-loader-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(59, 130, 246, 0.2);
+        border-top-color: #3b82f6;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 min-h-screen antialiased">
+    <div id="root">
+      <div style="min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background-color: #020617; color: #94a3b8;">
+        <div class="app-loader-spinner"></div>
+        <div style="text-align: center;">
+          <h2 style="margin: 0; font-size: 16px; font-weight: 700; color: #f8fafc; letter-spacing: -0.025em;">PlayStation Gaming Lounge</h2>
+          <p style="margin: 4px 0 0; font-size: 12px; color: #64748b;">Inapakia mfumo...</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

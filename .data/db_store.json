@@ -1,0 +1,627 @@
+{
+  "users": [
+    {
+      "id": "u-admin-1",
+      "name": "System Admin",
+      "username": "admin",
+      "role": "admin",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "u-op-1",
+      "name": "Station Operator (Kiosk Desk)",
+      "username": "operator",
+      "role": "operator",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z"
+    }
+  ],
+  "games": [
+    {
+      "id": "g-1",
+      "name": "Grand Theft Auto V",
+      "slug": "gta-v",
+      "description": "Open world action-adventure game by Rockstar Games set in Los Santos and Blaine County.",
+      "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+      "genre": "Action / Open World",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z",
+      "package_name": "com.rockstargames.gtav"
+    },
+    {
+      "id": "g-2",
+      "name": "EA SPORTS FC 25",
+      "slug": "ea-fc-25",
+      "description": "The premier football gaming simulation with 5v5 Rush, redesigned tactics with FC IQ, and official club rosters.",
+      "image_url": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+      "genre": "Sports / Football",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z",
+      "package_name": "com.ea.gp.fifamobile"
+    },
+    {
+      "id": "g-3",
+      "name": "Tekken 8",
+      "slug": "tekken-8",
+      "description": "Next-gen fighting game featuring aggressive new battle system with Heat mechanics and 32 characters.",
+      "image_url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
+      "genre": "Fighting",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z",
+      "package_name": "com.bandainamco.tekken8"
+    },
+    {
+      "id": "g-4",
+      "name": "Mortal Kombat 1",
+      "slug": "mortal-kombat-1",
+      "description": "Reborn Mortal Kombat Universe crafted by Fire God Liu Kang, introducing Kameo fighters and bone-crushing Fatalities.",
+      "image_url": "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=800&q=80",
+      "genre": "Fighting / Action",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z",
+      "package_name": "com.wb.goog.mk1"
+    },
+    {
+      "id": "g-5",
+      "name": "Gran Turismo 7",
+      "slug": "gran-turismo-7",
+      "description": "The Real Driving Simulator featuring authentic automotive physics, legendary circuits, and deep tuning.",
+      "image_url": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+      "genre": "Racing / Simulation",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z",
+      "package_name": "com.playstation.gt7.remote"
+    },
+    {
+      "id": "g-6",
+      "name": "God of War Ragnarök",
+      "slug": "god-of-war-ragnarok",
+      "description": "Kratos and Atreus embark on a mythic journey for answers before the prophesied battle that ends the Nine Realms.",
+      "image_url": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80",
+      "genre": "Action / Adventure",
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z",
+      "package_name": "com.playstation.gow.stream"
+    }
+  ],
+  "packages": [
+    {
+      "id": "pkg-1",
+      "game_id": "g-1",
+      "name": "5 Mins Quick Match",
+      "duration_seconds": 300,
+      "price_tzs": 1000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-2",
+      "game_id": "g-1",
+      "name": "10 Mins Standard Run",
+      "duration_seconds": 600,
+      "price_tzs": 2000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-3",
+      "game_id": "g-1",
+      "name": "30 Mins Heist Session",
+      "duration_seconds": 1800,
+      "price_tzs": 5000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-4",
+      "game_id": "g-1",
+      "name": "60 Mins Extended Drive",
+      "duration_seconds": 3600,
+      "price_tzs": 9000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-5",
+      "game_id": "g-2",
+      "name": "5 Mins Half Match",
+      "duration_seconds": 300,
+      "price_tzs": 1000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-6",
+      "game_id": "g-2",
+      "name": "15 Mins Full Match + Extra Time",
+      "duration_seconds": 900,
+      "price_tzs": 2500,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-7",
+      "game_id": "g-2",
+      "name": "30 Mins Derby Tournament",
+      "duration_seconds": 1800,
+      "price_tzs": 4500,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-8",
+      "game_id": "g-2",
+      "name": "60 Mins Champion Pass",
+      "duration_seconds": 3600,
+      "price_tzs": 8500,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-9",
+      "game_id": "g-3",
+      "name": "10 Mins Best of 5",
+      "duration_seconds": 600,
+      "price_tzs": 1500,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-10",
+      "game_id": "g-3",
+      "name": "20 Mins Versus Clash",
+      "duration_seconds": 1200,
+      "price_tzs": 3000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-11",
+      "game_id": "g-3",
+      "name": "45 Mins Dojo Practice",
+      "duration_seconds": 2700,
+      "price_tzs": 6000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-12",
+      "game_id": "g-4",
+      "name": "10 Mins Kombat",
+      "duration_seconds": 600,
+      "price_tzs": 1500,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-13",
+      "game_id": "g-4",
+      "name": "30 Mins Tower Challenge",
+      "duration_seconds": 1800,
+      "price_tzs": 4000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-14",
+      "game_id": "g-5",
+      "name": "15 Mins Hot Lap",
+      "duration_seconds": 900,
+      "price_tzs": 2500,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-15",
+      "game_id": "g-5",
+      "name": "30 Mins Grand Prix",
+      "duration_seconds": 1800,
+      "price_tzs": 4500,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "pkg-16",
+      "game_id": "g-6",
+      "name": "30 Mins Realm Quest",
+      "duration_seconds": 1800,
+      "price_tzs": 5000,
+      "is_active": true,
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    }
+  ],
+  "consoles": [
+    {
+      "id": "c-1",
+      "name": "Station 1 (PS4 Pro 4K HDR)",
+      "console_type": "PS4 Pro",
+      "station_code": "PS4-01",
+      "status": "available",
+      "access_adapter": "HDMI_RELAY_SHELLY",
+      "relay_state": "DISCONNECTED",
+      "ip_address": "192.168.1.101",
+      "last_seen_at": "2026-10-23T07:19:00.330Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:56:34.338Z",
+      "current_session_id": null,
+      "allowed_package_name": null,
+      "current_foreground_app": "com.playstation.kiosk",
+      "mismatch_count": 0,
+      "smart_plug_state": "ON"
+    },
+    {
+      "id": "c-2",
+      "name": "Station 2 (PS4 Slim Esports)",
+      "console_type": "PS4 Slim",
+      "station_code": "PS4-02",
+      "status": "available",
+      "access_adapter": "HDMI_RELAY_SHELLY",
+      "relay_state": "DISCONNECTED",
+      "ip_address": "192.168.1.102",
+      "last_seen_at": "2026-10-23T07:19:00.330Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z"
+    },
+    {
+      "id": "c-3",
+      "name": "Station 3 (Android TV Box - Xiaomi Mi Box 4K)",
+      "console_type": "Android TV Box",
+      "station_code": "ATV-01",
+      "status": "available",
+      "access_adapter": "ANDROID_TV_KIOSK_MONITOR",
+      "relay_state": "DISCONNECTED",
+      "ip_address": "192.168.1.103",
+      "last_seen_at": "2026-10-23T07:19:00.330Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:53:34.010Z",
+      "smart_plug_state": "ON",
+      "current_foreground_app": "com.playstation.kiosk",
+      "current_session_id": null,
+      "allowed_package_name": null,
+      "mismatch_count": 0
+    },
+    {
+      "id": "c-4",
+      "name": "Station 4 (Nvidia Shield TV Pro - Kiosk Locked)",
+      "console_type": "Nvidia Shield TV",
+      "station_code": "ATV-02",
+      "status": "available",
+      "access_adapter": "ANDROID_TV_KIOSK_MONITOR",
+      "relay_state": "DISCONNECTED",
+      "ip_address": "192.168.1.104",
+      "last_seen_at": "2026-10-23T07:19:00.330Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "updated_at": "2026-10-23T07:19:00.330Z",
+      "smart_plug_state": "ON",
+      "current_foreground_app": "com.playstation.kiosk"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1792739953394-88",
+      "order_reference": "ORD-VCH-953394",
+      "game_id": "g-1",
+      "package_id": "pkg-1",
+      "console_id": "c-1",
+      "price_tzs": 1000,
+      "duration_seconds": 300,
+      "payment_method": "voucher",
+      "status": "paid",
+      "created_at": "2026-10-23T07:19:13.394Z",
+      "paid_at": "2026-10-23T07:19:13.394Z"
+    },
+    {
+      "id": "ord-1792741650512-724",
+      "order_reference": "ORD-650512-541",
+      "game_id": "g-1",
+      "package_id": "pkg-1",
+      "console_id": "c-3",
+      "allowed_package_name": "com.rockstargames.gtav",
+      "price_tzs": 1000,
+      "duration_seconds": 300,
+      "payment_method": "voucher",
+      "status": "paid",
+      "created_at": "2026-10-23T07:47:30.512Z",
+      "paid_at": "2026-10-23T07:47:45.656Z"
+    },
+    {
+      "id": "ord-1792742173701-804",
+      "order_reference": "ORD-173701-313",
+      "game_id": "g-1",
+      "package_id": "pkg-1",
+      "console_id": "c-1",
+      "allowed_package_name": "com.rockstargames.gtav",
+      "price_tzs": 1000,
+      "duration_seconds": 300,
+      "payment_method": "MOBILE_MONEY",
+      "status": "paid",
+      "customer_phone": "0712345678",
+      "created_at": "2026-10-23T07:56:13.701Z",
+      "paid_at": "2026-10-23T07:56:30.298Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1792739953394-353",
+      "order_id": "ord-1792739953394-88",
+      "provider": "voucher",
+      "provider_reference": "VCH-PIN-7788",
+      "amount_tzs": 1000,
+      "currency": "TSh",
+      "status": "paid",
+      "idempotency_key": "IDEM-VCH-v-101",
+      "verified_at": "2026-10-23T07:19:13.394Z",
+      "created_at": "2026-10-23T07:19:13.394Z",
+      "updated_at": "2026-10-23T07:19:13.394Z"
+    },
+    {
+      "id": "pay-1792741659052-820",
+      "order_id": "ord-1792741650512-724",
+      "provider": "mpesa",
+      "provider_reference": "MPESA-TZ-484588",
+      "amount_tzs": 1000,
+      "currency": "TSh",
+      "status": "paid",
+      "idempotency_key": "IDEM-1792741659052-0.31396193256895577",
+      "verified_at": "2026-10-23T07:47:45.656Z",
+      "created_at": "2026-10-23T07:47:39.052Z",
+      "updated_at": "2026-10-23T07:47:45.656Z"
+    },
+    {
+      "id": "pay-1792742187217-110",
+      "order_id": "ord-1792742173701-804",
+      "provider": "mpesa",
+      "provider_reference": "MPESA-TZ-673168",
+      "amount_tzs": 1000,
+      "currency": "TSh",
+      "status": "paid",
+      "idempotency_key": "IDEM-1792742187217-0.7586367368961371",
+      "verified_at": "2026-10-23T07:56:30.298Z",
+      "created_at": "2026-10-23T07:56:27.217Z",
+      "updated_at": "2026-10-23T07:56:30.298Z"
+    }
+  ],
+  "vouchers": [
+    {
+      "id": "v-101",
+      "pin_display": "GTA-5MIN-7788",
+      "pin_hash": "bba7f9c25b50a5cba6c27a3a28110ec7b3f1329dcf4b2a8de99174f2c8eaffd1",
+      "game_id": "g-1",
+      "package_id": "pkg-1",
+      "value_tzs": 1000,
+      "duration_seconds": 300,
+      "status": "redeemed",
+      "expires_at": "2026-11-22T07:19:00.331Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "batch_id": "BATCH-PROMO-2026"
+    },
+    {
+      "id": "v-102",
+      "pin_display": "FIFA-15M-3321",
+      "pin_hash": "e74e6b47b73de478cc5c8ffbb794f5fa42fc314ef96511c0b1dbac3ca90811d1",
+      "game_id": "g-2",
+      "package_id": "pkg-6",
+      "value_tzs": 2500,
+      "duration_seconds": 900,
+      "status": "unused",
+      "expires_at": "2026-11-22T07:19:00.331Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "batch_id": "BATCH-PROMO-2026"
+    },
+    {
+      "id": "v-103",
+      "pin_display": "TK8-10M-9912",
+      "pin_hash": "b57f9ab29921879e454ea64a9a2c5bb14b026225a2f9f0d47d475bc4504e02b5",
+      "game_id": "g-3",
+      "package_id": "pkg-9",
+      "value_tzs": 1500,
+      "duration_seconds": 600,
+      "status": "unused",
+      "expires_at": "2026-11-22T07:19:00.331Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "batch_id": "BATCH-PROMO-2026"
+    },
+    {
+      "id": "v-104",
+      "pin_display": "ALL-30M-5000",
+      "pin_hash": "afb80a4f7f7eecf9cf9884b4d0b1769f48390a6d8a4a65a9b285c5c6b955e8d3",
+      "game_id": null,
+      "package_id": null,
+      "value_tzs": 5000,
+      "duration_seconds": 1800,
+      "status": "unused",
+      "expires_at": "2026-11-22T07:19:00.331Z",
+      "created_at": "2026-10-23T07:19:00.330Z",
+      "batch_id": "BATCH-VIP-2026"
+    }
+  ],
+  "voucher_redemptions": [
+    {
+      "id": "vr-1792739953394",
+      "voucher_id": "v-101",
+      "order_id": "ord-1792739953394-88",
+      "session_id": "ses-1792739953394-71",
+      "redeemed_at": "2026-10-23T07:19:13.394Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "ses-1792739953394-71",
+      "order_id": "ord-1792739953394-88",
+      "console_id": "c-1",
+      "game_id": "g-1",
+      "package_id": "pkg-1",
+      "status": "completed",
+      "started_at": "2026-10-23T07:19:13.394Z",
+      "ends_at": "2026-10-23T07:24:13.394Z",
+      "ended_at": "2026-10-23T07:38:43.642Z",
+      "access_status": "ACCESS_REVOKED",
+      "duration_purchased": 300,
+      "created_at": "2026-10-23T07:19:13.394Z",
+      "updated_at": "2026-10-23T07:38:43.642Z"
+    },
+    {
+      "id": "ses-1792741665656-790",
+      "order_id": "ord-1792741650512-724",
+      "console_id": "c-3",
+      "game_id": "g-1",
+      "package_id": "pkg-1",
+      "allowed_package_name": "com.rockstargames.gtav",
+      "status": "completed",
+      "started_at": "2026-10-23T07:47:45.656Z",
+      "ends_at": "2026-10-23T07:52:45.656Z",
+      "ended_at": "2026-10-23T07:53:34.010Z",
+      "access_status": "ACCESS_REVOKED",
+      "duration_purchased": 300,
+      "mismatch_violations": 0,
+      "created_at": "2026-10-23T07:47:45.656Z",
+      "updated_at": "2026-10-23T07:53:34.010Z"
+    },
+    {
+      "id": "ses-1792742190298-422",
+      "order_id": "ord-1792742173701-804",
+      "console_id": "c-1",
+      "game_id": "g-1",
+      "package_id": "pkg-1",
+      "allowed_package_name": "com.rockstargames.gtav",
+      "customer_phone": "0712345678",
+      "status": "completed",
+      "started_at": "2026-10-23T07:56:30.298Z",
+      "ends_at": "2026-10-23T08:01:30.298Z",
+      "ended_at": "2026-10-23T07:56:34.338Z",
+      "access_status": "ACCESS_REVOKED",
+      "duration_purchased": 300,
+      "mismatch_violations": 0,
+      "created_at": "2026-10-23T07:56:30.298Z",
+      "updated_at": "2026-10-23T07:56:34.338Z"
+    }
+  ],
+  "access_events": [
+    {
+      "id": "ae-1792742194338-513",
+      "session_id": "ses-1792742190298-422",
+      "console_id": "c-1",
+      "event_type": "SESSION_TERMINATED",
+      "result": "SUCCESS",
+      "details": "Session stopped: Customer left early. Console access revoked and display/app locked to kiosk.",
+      "created_at": "2026-10-23T07:56:34.338Z"
+    },
+    {
+      "id": "ae-1792742190298-249",
+      "session_id": "ses-1792742190298-422",
+      "console_id": "c-1",
+      "event_type": "STATION_UNLOCKED_SESSION_STARTED",
+      "result": "SUCCESS",
+      "details": "PS4 Access granted for 5 minutes via Order ORD-173701-313. Relay CONNECTED.",
+      "created_at": "2026-10-23T07:56:30.298Z"
+    },
+    {
+      "id": "ae-1792742014010-805",
+      "session_id": "ses-1792741665656-790",
+      "console_id": "c-3",
+      "event_type": "ATV_SESSION_EXPIRED_RETURN_LAUNCHER",
+      "result": "SUCCESS",
+      "details": "[Android TV Kiosk] Time expired for ATV-01. Forced close of game and returned to kiosk launcher.",
+      "created_at": "2026-10-23T07:53:34.011Z"
+    },
+    {
+      "id": "ae-1792741681435-112",
+      "session_id": "ses-1792741665656-790",
+      "console_id": "c-3",
+      "event_type": "GAME_MISMATCH_SECURITY_ACTION",
+      "result": "SUCCESS",
+      "details": "[Android TV Box ATV-01] Force-killed \"com.android.settings\". Returned to Kiosk. Strike #3 — SMART PLUG POWER CUT TRIGGERED AS BACKUP!",
+      "created_at": "2026-10-23T07:48:01.435Z"
+    },
+    {
+      "id": "ae-1792741681418-476",
+      "session_id": "ses-1792741665656-790",
+      "console_id": "c-3",
+      "event_type": "GAME_MISMATCH_SECURITY_ACTION",
+      "result": "SUCCESS",
+      "details": "[Android TV Box ATV-01] Force-killed \"com.google.android.youtube.tv\". Returned to Kiosk. Strike #2",
+      "created_at": "2026-10-23T07:48:01.418Z"
+    },
+    {
+      "id": "ae-1792741677480-380",
+      "session_id": "ses-1792741665656-790",
+      "console_id": "c-3",
+      "event_type": "GAME_MISMATCH_SECURITY_ACTION",
+      "result": "SUCCESS",
+      "details": "[Android TV Box ATV-01] Force-killed \"com.ea.gp.fifamobile\". Returned to Kiosk. Strike #1",
+      "created_at": "2026-10-23T07:47:57.480Z"
+    },
+    {
+      "id": "ae-1792741665656-275",
+      "session_id": "ses-1792741665656-790",
+      "console_id": "c-3",
+      "event_type": "ATV_SESSION_AUTHORIZED",
+      "result": "SUCCESS",
+      "details": "[Android TV Kiosk] Session locked to package \"com.rockstargames.gtav\" on ATV-01. Timer started (5m). Smart plug ON.",
+      "created_at": "2026-10-23T07:47:45.656Z"
+    },
+    {
+      "id": "ae-1792741123642-741",
+      "session_id": "ses-1792739953394-71",
+      "console_id": "c-1",
+      "event_type": "SESSION_EXPIRED_HDMI_CUT",
+      "result": "SUCCESS",
+      "details": "Time finished! Access control cut HDMI/power relay for console PS4-01. Station returned to available.",
+      "created_at": "2026-10-23T07:38:43.642Z"
+    },
+    {
+      "id": "ae-1792739953394-556",
+      "session_id": "ses-1792739953394-71",
+      "console_id": "c-1",
+      "event_type": "STATION_UNLOCKED_SESSION_STARTED",
+      "result": "SUCCESS",
+      "details": "PS4 Access granted for 5 minutes via Order ORD-VCH-953394. Relay CONNECTED.",
+      "created_at": "2026-10-23T07:19:13.394Z"
+    },
+    {
+      "id": "ae-init-1",
+      "session_id": null,
+      "console_id": "c-1",
+      "event_type": "SYSTEM_BOOT",
+      "result": "SUCCESS",
+      "details": "Station 1 access control adapter initialized and synced.",
+      "created_at": "2026-10-23T07:19:00.330Z"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "al-init-1",
+      "user_id": "u-admin-1",
+      "action": "SYSTEM_INIT",
+      "entity_type": "SYSTEM",
+      "entity_id": "SYS-1",
+      "metadata": {
+        "message": "PlayStation Gaming Management System bootstrapped with 6 games and 4 consoles."
+      },
+      "created_at": "2026-10-23T07:19:00.330Z"
+    }
+  ]
+}
